@@ -175,12 +175,40 @@ $ less README.md
 \end{frame}
 
 %------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{history}
+	\texttt{history} - a special type of command (shell builtin) ("\textit{Shell builtin commands are commands that can be executed within the running shell's process"} - \texttt{man history})
+	\begin{verbatim}
+	$ history
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{grep}
+	\texttt{grep} - file pattern searcher
+	\begin{verbatim}
+	$ grep needle haystack
+	$ grep -n needle haystack
+	$ grep Needle haystack
+	$ grep -i Needle haystack
+	$ grep -r needle haystacks
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
 \section{Pipes}
 %------------------------------------------------
 
 \begin{frame}[fragile]
 \frametitle{Pipes}
+	Using all these simple programs together can be extremely powerful
+	\\~\\
+	Trivial example: Using \texttt{history} and \texttt{grep} together
 	\begin{verbatim}
+	$ history | grep ls
 	\end{verbatim}
 \end{frame}
 
