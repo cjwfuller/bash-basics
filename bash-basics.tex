@@ -158,6 +158,23 @@ $ less README.md
 \end{frame}
 
 %------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{ssh and scp}
+	\texttt{ssh} - OpenSSH SSH client (remote login program)
+	\\
+	\texttt{scp} - secure copy (remote file copy program)
+	\begin{verbatim}
+	$ ssh root@<remote ip address>
+	$ ssh -i /path/to/key/file root@<remote ip address>
+	
+	$ scp root@<remote ip address> /path/on/local/machine/
+	$ scp /path/on/local/machine/hello.txt \
+	root@<remote ip address>:/path/on/remote/machine
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
 \section{Pipes}
 %------------------------------------------------
 
