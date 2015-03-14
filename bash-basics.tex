@@ -105,12 +105,65 @@ Open your terminal emulator...
 %------------------------------------------------
 
 \begin{frame}[fragile]
-\frametitle{cat}
+\frametitle{cat and less}
 	\texttt{cat} - concatenate and print files
+	\\
+	\texttt{less} - read files
 	\begin{verbatim}
 $ cat README.md
-# bash-basics
-Presentation on the basics of bash
+$ less README.md
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{mv and copy}
+	\texttt{mv} - move files
+	\\
+	\texttt{cp} - copy files
+	\begin{verbatim}
+	$ mv source target
+	$ cp source target
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{rm, rmdir, mkdir}
+	\texttt{rm} - remove directory entries
+	\\
+	\texttt{rmdir} - remove directories
+	\\
+	\texttt{mkdir} - make directories
+	\begin{verbatim}
+	$ rm file
+	$ rmdir directory
+	$ mkdir directory
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{sudo}
+	\texttt{sudo} - execute a command as another user (or, ``Shut Up and DO")
+	\begin{verbatim}
+	$ touch /etc/foo.txt
+	$ sudo touch /etc/foo.txt
+	$ rm /etc/foo.txt
+	$ sudo rm /etc/foo.txt
+	\end{verbatim}
+\end{frame}
+
+%------------------------------------------------
+\section{Pipes}
+%------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{Pipes}
+	\begin{verbatim}
 	\end{verbatim}
 \end{frame}
 
